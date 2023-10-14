@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/genera"  android:title="General">
+            <menu>
+                <group>
+                    <item android:id="@+id/home" android:icon="@drawable/home" android:title="Home"/>
+                    <item android:id="@+id/info" android:icon="@drawable/info" android:title="Info"/>
+                </group>
+            </menu>
+        </item>
+    <item android:id="@+id/general"  android:title="User">
+        <menu>
+            <group>
+                <item android:id="@+id/profile" android:icon="@drawable/pro" android:title="Profile"/>
+                <item android:id="@+id/like" android:icon="@drawable/hred" android:title="Hearted Books"/>
+                <item android:id="@+id/logout" android:icon="@drawable/out" android:title="Logout"/>
+            </group>
+        </menu>
+    </item>
+
+        <item android:id="@+id/others" android:title="Others">
+            <menu>
+                <group >
+                    <item android:id="@+id/share" android:title="Share" android:icon="@drawable/ic_baseline_share_24"/>
+                    <item android:id="@+id/about" android:title="About" android:icon="@drawable/about"/>
+                </group>
+
+            </menu>
+        </item>
+
+
+</menu>

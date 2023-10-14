@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#101010"
+    android:layout_height="match_parent"
+    tools:context=".selection">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bar"
+        app:title="Categories"
+        android:background="#1b1b1b"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/nav"/>
+
+    <ScrollView
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user"
+                android:text="Visitor count : "
+                android:textColor="#2973ae"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/myst"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n1"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/mys"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mystery / Thriller"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/rom"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n2"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rom"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Romance"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n3"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/hor"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horror"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/act"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n4"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/adv"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Action / Adventure"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/fan"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n5"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/fan"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fantasy"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n6"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bio"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biography"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/chi"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp"
+                    >
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n7"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/chi"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Children / Moral"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/sci"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n8"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/sci"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Science / Fiction"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/spr"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n9"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/spr"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spritual"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/tam"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n10"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/tam"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="தமிழ்"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/coo"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n11"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/coo"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cooking"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n12"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/eng"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engineering Notes"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/oth"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/n13"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/lan"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other Languages"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textSize="22dp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/tec"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="10dp">
+            <RelativeLayout
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:background="@drawable/n14"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tec"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technology"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:textSize="22dp"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

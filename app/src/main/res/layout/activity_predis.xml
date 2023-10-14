@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorr"
+    android:background="#1b1b1b"
+    android:layout_height="match_parent"
+    tools:context=".predis">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="#0A2631"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:fitsSystemWindows="true"
+            android:background="#1b1b1b"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="#1b1b1b"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/one"
+                        app:layout_collapseMode="parallax"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/head"
+                        android:scaleType="centerCrop"
+                        android:layout_height="300dp"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:titleTextColor="#fff"
+                app:title="Book Name"
+                app:navigationIcon="@drawable/back"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:background="#1b1b1b"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+        <ScrollView
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingTop="20dp"
+                                    android:id="@+id/c1"
+                                    android:layout_height="wrap_content">
+                                    <RelativeLayout
+                                        android:id="@id/a1"
+                                        android:background="#151515"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/bookimage"
+                                            android:layout_marginTop="15dp"
+                                            android:layout_marginBottom="15dp"
+                                            android:layout_width="120dp"
+                                            android:layout_height="180dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:src="@drawable/l"/>
+                                        <RelativeLayout
+                                            android:layout_marginTop="10dp"
+                                            android:id="@+id/a1"
+                                            android:layout_centerInParent="true"
+                                            android:layout_toEndOf="@id/bookimage"
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <RelativeLayout
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/tq"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="18dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:text="User Rating"
+                                                    android:textColor="#0E9428"/>
+
+                                                <RatingBar
+                                                    android:layout_below="@+id/tq"
+                                                    android:id="@+id/dummyrating"
+                                                    android:layout_centerInParent="true"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:rating="4.5"
+                                                    android:numStars="5"
+                                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                                    android:secondaryProgressTint="#fff"
+                                                    android:progressBackgroundTint="#fff"
+                                                    android:progressTint="#ffd700"
+                                                    android:layout_marginTop="5dp"
+                                                    android:stepSize="0.5"/>
+                                            </RelativeLayout>
+
+                                        </RelativeLayout>
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_below="@id/c1"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:paddingTop="20dp"
+                                    android:id="@+id/c2"
+                                    android:layout_height="wrap_content">
+                                    <RelativeLayout
+                                        android:background="#151515"
+                                        android:id="@+id/a2"
+                                        android:paddingBottom="12dp"
+                                        android:paddingTop="12dp"
+                                        android:layout_below="@id/c1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/t1"
+                                            android:layout_marginLeft="15dp"
+                                            android:textStyle="bold"
+                                            android:text="Book Name : "
+                                            android:textColor="#94630E"
+                                            android:textSize="16dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/bookname"
+                                            android:layout_marginRight="15dp"
+                                            android:text="Adventure of srihari kota Rocket Launch in Andhra Pradesh"
+                                            android:textSize="16dp"
+                                            android:textColor="#2973ae"
+                                            android:layout_toEndOf="@id/t1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/t3"
+                                            android:layout_marginTop="8dp"
+                                            android:textStyle="bold"
+                                            android:text="By : "
+                                            android:textSize="16dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:textColor="#94630E"
+                                            android:layout_below="@id/bookname"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/author"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="#2973ae"
+                                            android:text="Author"
+                                            android:textSize="16dp"
+                                            android:layout_below="@id/bookname"
+                                            android:layout_toEndOf="@id/t3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/t5"
+                                            android:layout_marginTop="8dp"
+                                            android:textStyle="bold"
+                                            android:text="Page Count : "
+                                            android:textSize="16dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:textColor="#94630E"
+                                            android:layout_below="@id/author"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/pages"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="#2973ae"
+                                            android:text="231"
+                                            android:textSize="16dp"
+                                            android:layout_below="@id/author"
+                                            android:layout_toEndOf="@id/t5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/dview"
+                                            android:layout_marginTop="8dp"
+                                            android:textStyle="bold"
+                                            android:text="Views : "
+                                            android:textSize="16dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:textColor="#94630E"
+                                            android:layout_below="@id/t5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/view"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="#2973ae"
+                                            android:text="231"
+                                            android:textSize="16dp"
+                                            android:layout_below="@id/pages"
+                                            android:layout_toEndOf="@id/dview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_below="@id/c2"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:paddingTop="20dp"
+                                    android:id="@+id/c33"
+                                    android:layout_height="wrap_content">
+                                    <RelativeLayout
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="20dp"
+                                        android:background="#151515"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/t7"
+                                            android:layout_marginTop="8dp"
+                                            android:textStyle="bold"
+                                            android:text="Description : "
+                                            android:textSize="16dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:textColor="#15940E"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/desc"
+                                            android:layout_marginTop="15dp"
+                                            android:textColor="#808080"
+                                            android:layout_marginLeft="15dp"
+                                            android:layout_marginRight="15dp"
+                                            android:text="@string/an"
+                                            android:textSize="14dp"
+                                            android:layout_below="@id/t7"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/dd"
+                                            android:layout_marginTop="15dp"
+                                            android:textColor="#808080"
+                                            android:layout_marginLeft="15dp"
+                                            android:layout_marginRight="15dp"
+                                            android:text="@string/an"
+                                            android:textSize="14dp"
+                                            android:layout_below="@id/desc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_below="@id/c33"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:paddingTop="20dp"
+                                    android:id="@+id/c4"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:background="#151515"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingBottom="20dp"
+                                        android:paddingTop="20dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Rate Book :"
+                                            android:id="@+id/rt"
+                                            android:textStyle="bold"
+                                            android:textColor="#2973ae"
+                                            android:textSize="15dp"/>
+                                        <RatingBar
+                                            android:id="@+id/rtt"
+                                            android:layout_below="@+id/rt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:rating="0"
+                                            android:numStars="5"
+                                            android:layout_centerHorizontal="true"
+                                            android:secondaryProgressTint="#909090"
+                                            android:progressBackgroundTint="#505050"
+                                            android:progressTint="#ffd700"
+                                            android:layout_marginTop="15dp"
+                                            android:stepSize="0.5"/>
+                                        <Button
+                                            android:layout_below="@id/rtt"
+                                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                                            android:id="@+id/ratesubmit"
+                                            android:layout_marginTop="15dp"
+                                            android:text="Submit"
+                                            android:background="@drawable/n11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:textColor="#fff"
+                                            android:layout_marginLeft="70dp"
+                                            android:layout_marginRight="70dp"/>
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <Button
+                                    android:id="@+id/readbook"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:layout_below="@id/c4"
+                                    android:background="@drawable/n3"
+                                    android:layout_marginTop="30dp"
+                                    android:textColor="#fff"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:text="Read Book"
+                                    android:layout_marginBottom="40dp"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

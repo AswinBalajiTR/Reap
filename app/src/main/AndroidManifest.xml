@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.log">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Log">
+        <activity android:name=".predis"></activity>
+        <activity android:name=".trial" />
+        <activity android:name=".tecc" />
+        <activity android:name=".reset" />
+        <activity android:name=".creatr" />
+        <activity android:name=".enter" />
+        <activity android:name=".login" />
+        <activity android:name=".first" />
+        <activity android:name=".othh" />
+        <activity android:name=".engg" />
+        <activity android:name=".cooo" />
+        <activity android:name=".tamm" />
+        <activity android:name=".sprr" />
+        <activity android:name=".scii" />
+        <activity android:name=".chii" />
+        <activity android:name=".bioo" />
+        <activity android:name=".fann" />
+        <activity android:name=".actt" />
+        <activity android:name=".horr" />
+        <activity android:name=".romm" />
+        <activity android:name=".selection" />
+        <activity android:name=".Display" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/c"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r"
+        android:layout_below="@+id/b"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/a"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="30dp"
+                android:text=" R "
+                android:textColor="#D13474"/>
+            <TextView
+                android:id="@+id/c"
+                android:layout_toEndOf="@id/a"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text=" E "
+                android:textColor="#D19134"/>
+            <TextView
+                android:id="@+id/d"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/c"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="30dp"
+                android:text=" A "
+                android:textColor="#9434D1"/>
+            <TextView
+                android:id="@+id/e"
+                android:layout_toEndOf="@id/d"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="30dp"
+                android:text=" P "
+                android:textColor="#54D134"/>
+    </RelativeLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/b"
+        android:layout_marginBottom="20dp"
+        app:lottie_autoPlay="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        app:lottie_rawRes="@raw/splah"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/c"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/re"
+        android:layout_above="@+id/ree"
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/aa"/>
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/ree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@+id/flogin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/a"
+            android:fontFamily="sans-serif-black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Hi, Please"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@id/b"
+            android:layout_below="@id/a"
+            android:textSize="35dp"
+            android:fontFamily="sans-serif-black"
+
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Login,First"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@id/c"
+            android:layout_below="@id/b"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textColor="#ADACAC"
+            android:layout_height="wrap_content"
+            android:text="Learn new things and thoughts"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@id/d"
+            android:layout_below="@id/c"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textColor="#ADACAC"
+            android:layout_height="wrap_content"
+            android:text="Anywhere with Reap"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/flogin"
+        android:layout_marginRight="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/btn"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_above="@id/t"
+        android:layout_marginTop="60dp"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/t"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/dont"
+            android:textColor="#adacac"
+            android:text="Don't have an account ?"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/fcreate"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/dont"
+            android:textColor="#2973ae"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
